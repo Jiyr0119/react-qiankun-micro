@@ -62,6 +62,10 @@ export default defineConfig({
           ],
         },
         {
+          path: '/microApp',
+          component: './User/login',
+        },
+        {
           path: '/',
           component: '../layouts/BasicLayout',
           Routes: ['src/pages/Authorized'],
@@ -333,10 +337,10 @@ export default defineConfig({
     basePath: '/',
   },
   esbuild: {},
-  devServer:{
-    port:8010
+  devServer: {
+    port: 8010,
   },
-  // qiankun: {
-  //   slave: {},
-  // },
+  qiankun: {
+    slave: {},
+  },
 });
